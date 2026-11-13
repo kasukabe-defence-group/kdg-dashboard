@@ -1,0 +1,56 @@
+# Credentials and local settings (only reviewed examples are tracked)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.state/
+.kdg/
+.kdg-backup/
+**/rclone.conf
+**/*credentials*
+**/kdg-auth-users.json
+**/kdg-sessions.json
+**/kdg-api-keys.json
+**/kdg-audit.jsonl
+**/kdg-nc-sso-map.json
+
+# Runtime data — never upload real user/server files
+**/kdg-cache/
+**/kdg-s3/
+**/workspaces/
+**/minecraft/data/
+**/minecraft/backups/
+uploads/
+*.sqlite*
+*.db
+*.log
+
+# Dependencies, build output, tools and caches
+node_modules/
+.venv/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.output/
+.nitro/
+.tanstack/
+.vite/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Backup source copies and local editor/OS files
+*.backup*
+*.pre_live_metrics
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
